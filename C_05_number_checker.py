@@ -1,4 +1,4 @@
-def num_checker(question, num_type, exit_code=None):
+def int_checker(question, num_type, exit_code=None):
     """Checks users enter an integer / float that is more than zero
     (or optional exit code)"""
 
@@ -36,10 +36,10 @@ def num_checker(question, num_type, exit_code=None):
 while True:
     print()
 
-    my_float = num_checker("Please enter a number more than 0: ", "float")
+    my_float = int_checker("Please enter a number more than 0: ", "float")
     print(f"Thanks. You chose {my_float}")
     print()
-    my_int = num_checker("Please enter an integer more than 0: ", "integer", "")
+    my_int = int_checker("Please enter an integer more than 0: ", "integer", "")
 
     if my_int == "":
         print("You have chosen infinite mode.")
